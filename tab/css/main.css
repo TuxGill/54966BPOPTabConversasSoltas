@@ -1,0 +1,273 @@
+/***************************************************************
+	->	VAR
+***************************************************************/
+/***************************************************************
+	->	HOME
+***************************************************************/
+body {
+  background: url("../images/desktop.jpg") no-repeat top center, url("../images/bg_pattern.jpg") repeat-y top center; }
+
+.container {
+  max-width: 750px !important; }
+  .container .header {
+    margin-top: 60px; }
+  .container .row:first-child {
+    height: 509px; }
+  .container .row .homeContent {
+    margin-top: 42px;
+    text-align: center;
+    min-height: 510px; }
+    .container .row .homeContent h1 {
+      font-size: 20px;
+      color: #fff;
+      font-family: "PopularSans-Bold";
+      margin-bottom: 30px;
+      text-align: left; }
+    .container .row .homeContent ul {
+      padding: 0;
+      margin-bottom: 57px; }
+      .container .row .homeContent ul li {
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        cursor: pointer; }
+        .container .row .homeContent ul li a:hover {
+          text-decoration: none; }
+        .container .row .homeContent ul li div {
+          height: 136px;
+          background: white;
+          border-radius: 6px;
+          box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          -o-transition: all 0.5s linear;
+          transition: all 0.5s linear; }
+          .container .row .homeContent ul li div:hover {
+            background: #e0ded8; }
+          .container .row .homeContent ul li div .helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle; }
+          .container .row .homeContent ul li div img {
+            width: 85%;
+            vertical-align: middle; }
+          .container .row .homeContent ul li div .prxNivel {
+            width: 87%; }
+          .container .row .homeContent ul li div .agroAlimentar {
+            width: 67%; }
+    .container .row .homeContent .btnSobre {
+      font-family: "PopularSans-Bold";
+      color: #e40053;
+      font-size: 20px;
+      border-radius: 6px;
+      background-color: white;
+      box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+      width: 218px;
+      height: 48px; }
+    .container .row .homeContent #sobreNos {
+      margin-top: 30px;
+      text-align: left;
+      font-size: 16px;
+      color: #fff;
+      font-family: "PopularSans-Light"; }
+
+/***************************************************************
+	->	VIDEO GALLERY
+***************************************************************/
+.jplist a {
+  color: #675c53; }
+  .jplist a:hover, .jplist a:focus {
+    text-decoration: none;
+    color: #675c53; }
+.jplist .panel-top .jplist-drop-down {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 3px solid #fff;
+  background: none;
+  width: 247px;
+  height: 40px;
+  font-family: "PopularSans-Bold";
+  font-size: 16px;
+  color: #fff;
+  text-shadow: none;
+  border-radius: initial;
+  box-shadow: none;
+  float: right; }
+  .jplist .panel-top .jplist-drop-down:hover .jplist-dd-panel {
+    color: #e0ded8; }
+  .jplist .panel-top .jplist-drop-down ul {
+    width: 247px;
+    color: #675c53;
+    background: rgba(255, 255, 255, 0.95);
+    top: 10px;
+    border: none;
+    font-size: 16px;
+    box-shadow: none; }
+    .jplist .panel-top .jplist-drop-down ul li:hover {
+      background-color: initial;
+      color: #e40053; }
+  .jplist .panel-top .jplist-drop-down .jplist-dd-panel {
+    line-height: 40px;
+    text-indent: 0px;
+    width: 89%;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
+    .jplist .panel-top .jplist-drop-down .jplist-dd-panel:after {
+      top: -4px;
+      font-family: "FontAwesome";
+      content: '\F107';
+      color: #fff;
+      font-size: 21px; }
+.jplist .content-gallery {
+  clear: both; }
+  .jplist .content-gallery .vid-item {
+    background: transparent; }
+.jplist .panel-bottom {
+  clear: both; }
+  .jplist .panel-bottom .jplist-pagination {
+    float: none;
+    width: 96%;
+    margin: 0 auto;
+    text-align: center;
+    clear: both;
+    position: relative;
+    text-align: center; }
+    .jplist .panel-bottom .jplist-pagination .jplist-pagingprev, .jplist .panel-bottom .jplist-pagination .jplist-pagingmid, .jplist .panel-bottom .jplist-pagination .jplist-pagesbox, .jplist .panel-bottom .jplist-pagination .jplist-pagingnext {
+      display: inline-block;
+      float: none; }
+    .jplist .panel-bottom .jplist-pagination button {
+      box-shadow: none;
+      border: none;
+      text-shadow: none;
+      background: transparent;
+      color: #fff;
+      font-family: "PopularSans-Bold";
+      font-size: 16px;
+      margin-right: 0px;
+      padding: 0 9px; }
+    .jplist .panel-bottom .jplist-pagination .jplist-current {
+      font-weight: normal !important;
+      border: 2px solid white;
+      color: #fff !important;
+      border-radius: 15px;
+      margin-top: 8px; }
+.jplist .btnVoltar {
+  float: left;
+  margin-top: 8px; }
+  .jplist .btnVoltar i {
+    font-size: 20px;
+    padding-right: 5px; }
+  .jplist .btnVoltar a {
+    color: #fff;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    font-family: "PopularSans-Bold";
+    font-size: 16px; }
+    .jplist .btnVoltar a:hover, .jplist .btnVoltar a:focus {
+      text-decoration: none;
+      color: #e0ded8; }
+.jplist .txtIntro {
+  clear: both;
+  display: inline-block;
+  margin-bottom: 45px;
+  font-size: 16px;
+  font-family: "PopularSans-Light";
+  color: #fff; }
+.jplist .videoRec {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px; }
+  .jplist .videoRec span {
+    position: relative;
+    display: block;
+    font-family: "FontAwesome"; }
+    .jplist .videoRec span:before {
+      content: "\f144";
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: opacity .3s ease-in-out;
+      opacity: 0.5;
+      font-size: 90px;
+      text-shadow: 0px 2px 4.75px rgba(0, 0, 0, 0.25);
+      margin-left: -38.5px;
+      margin-top: -55px; }
+    .jplist .videoRec span:hover:before {
+      opacity: 0.8; }
+  .jplist .videoRec img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 18px; }
+  .jplist .videoRec .vidTitle, .jplist .videoRec .vidData {
+    font-family: "PopularSans-Regular";
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    padding-left: 5%; }
+  .jplist .videoRec .vidTitle {
+    margin-top: 18px;
+    height: 45px;
+    overflow: hidden; }
+  .jplist .videoRec .vidData {
+    margin-top: 12px;
+    padding-bottom: 12px;
+    font-size: 12px; }
+
+#cboxContent #cboxClose {
+  background-position: -50px 0px;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  top: -42px;
+  right: -13px; }
+
+@media (max-width: 767px) {
+  .homeContent div {
+    height: 250px !important;
+    margin-bottom: 40px; } }
+@media only screen and (max-width: 600px) {
+  .jplist-panel {
+    display: block !important; } }
+@media (max-width: 550px) {
+  body {
+    background: url("../images/mobile.jpg") no-repeat top center, url("../images/bg_pattern.jpg") repeat-y top center; }
+
+  .homeContent div {
+    height: 200px !important;
+    margin-bottom: 40px; }
+
+  .header {
+    text-align: center; }
+    .header img {
+      width: 100%; }
+
+  .container .row .homeContent .btnSobre {
+    width: 100%; } }
+@media (max-width: 400px) {
+  .homeContent div {
+    height: 150px !important;
+    margin-bottom: 40px; }
+
+  .header {
+    text-align: center; }
+    .header img {
+      width: 100%; }
+
+  .jplist .btnVoltar {
+    width: 100%;
+    text-align: center; }
+
+  .jplist .panel-top .jplist-drop-down {
+    width: 100%;
+    margin-top: 25px; } }
+
+/*# sourceMappingURL=main.css.map */

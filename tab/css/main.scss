@@ -1,0 +1,448 @@
+/***************************************************************
+	->	VAR
+***************************************************************/
+// Colors
+$text-color-light: #fff;
+$text-color-dark: #675c53;
+$bpop_red: #e40053;
+$bpop_cinza:#e0ded8;
+
+
+// Text-Size
+$text-main-size:20px;
+$text-medium-size:16px;
+$text-small-size:12px;
+
+// Font
+$font-bold:'PopularSans-Bold';
+$font-regular:'PopularSans-Regular';
+$font-light:'PopularSans-Light';
+$font-awesome:'FontAwesome';
+
+
+
+
+/***************************************************************
+	->	HOME
+***************************************************************/
+body{
+	background: url("../images/desktop.jpg") no-repeat top center ,url("../images/bg_pattern.jpg") repeat-y top center  ;
+}
+.container{
+	// background:blue;
+	max-width:750px!important;
+
+	.header{
+		margin-top: 60px;
+	}
+
+	.row{
+		&:first-child{
+			height: 509px;
+		}
+
+		.homeContent{
+			margin-top: 42px;
+			text-align: center;
+			min-height: 510px;
+
+			h1{
+				font-size:$text-main-size;
+				color: $text-color-light;
+				font-family: $font-bold;
+				margin-bottom: 30px;
+				text-align: left;
+			}
+			
+			ul{
+				padding:0;
+				margin-bottom: 57px;
+
+				li{
+					list-style-type: none;
+    				text-align: center;
+    				padding-left: 0;
+    				cursor: pointer;
+					a{
+						&:hover{
+							text-decoration: none;
+						}
+					}
+					div{
+						height: 136px;
+					    background: white;
+					    border-radius: 6px;
+				        box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+				        -webkit-transition: all 0.5s linear;
+						-moz-transition: all 0.5s linear;
+						-o-transition: all 0.5s linear;
+						transition: all 0.5s linear;
+				        &:hover{
+			        	    background: $bpop_cinza;
+				        }
+
+
+						.helper {
+						    display: inline-block;
+						    height: 100%;
+						    vertical-align: middle;
+						}
+						
+						img{
+						    width: 85%;
+						    vertical-align: middle;
+						}
+
+						.prxNivel{
+							width: 87%;
+						}
+
+						.agroAlimentar{
+							width: 67%;
+						}
+					}
+				}
+			}
+
+			.btnSobre{
+				font-family: $font-bold;
+				color:$bpop_red;
+				font-size:$text-main-size;
+				border-radius: 6px;
+				background-color: rgb(255, 255, 255);
+				box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+				width: 218px;
+  				height: 48px;
+			}
+
+			#sobreNos{
+				margin-top: 30px;
+    			text-align: left;
+				font-size:$text-medium-size;
+				color: $text-color-light;
+				font-family: $font-light;
+
+			}
+
+		}//.homeContent
+
+	}//.row
+}//.container
+
+
+
+/***************************************************************
+	->	VIDEO GALLERY
+***************************************************************/
+.jplist{ 
+	a{
+		color: $text-color-dark;
+
+		&:hover, &:focus{
+			text-decoration: none;
+			color: $text-color-dark;
+		}
+	}
+	
+	// Drop-down categorias
+	.panel-top{
+		.jplist-drop-down{
+			margin:0;
+			padding:0;
+			margin-bottom: 50px;
+	        border: none;
+			border-bottom:3px solid $text-color-light;
+			background:none;
+			width: 247px;
+			height: 40px;
+			font-family: $font-bold;
+			font-size:$text-medium-size;
+			color:$text-color-light;
+			text-shadow: none;
+			border-radius:initial;
+			box-shadow:none;
+		 	float: right;
+
+			&:hover{
+				.jplist-dd-panel{
+					color:  $bpop_cinza;
+				}
+			}
+
+			ul{
+				width: 247px;
+				color:$text-color-dark;
+				background: rgba(255, 255, 255, 0.95);
+				top:10px;
+				border:none;
+				font-size:$text-medium-size;
+				box-shadow:none;
+
+				li:hover{
+					 background-color: initial;
+					 color:$bpop_red;
+				}
+
+			}
+
+			.jplist-dd-panel{
+			    line-height: 40px;
+		        text-indent: 0px;
+		        width: 89%;
+				-webkit-transition: all 0.5s linear;
+				-moz-transition: all 0.5s linear;
+				-o-transition: all 0.5s linear;
+				transition: all 0.5s linear;
+				
+				&:after{
+					top:-4px;
+					font-family: $font-awesome;
+				 	content: '\F107';
+				 	color:$text-color-light;
+				 	font-size: 21px;
+				}
+			}
+			
+
+		}
+
+	
+	}//.panel-top
+
+
+	// Conteudo galeria
+	.content-gallery{
+		clear:both;
+
+
+		.vid-item{
+    		background: transparent;
+		}//.vid-item
+	}//.content-gallery
+
+
+	// Sem Resultados
+	.noResults{
+
+	}//.noResults
+
+
+	// Pagination
+	.panel-bottom{
+		clear:both;
+	
+		.jplist-pagination{
+			float: none;
+		    width: 96%;
+		    margin: 0 auto;
+		    text-align: center;
+		    clear: both;
+		    position: relative;
+		    text-align: center;
+
+		    .jplist-pagingprev, .jplist-pagingmid, .jplist-pagesbox, .jplist-pagingnext{
+		    	display: inline-block;
+		    	float: none;
+		    }
+
+			button{
+				box-shadow: none;
+				border:none;
+				text-shadow:none;
+				background:transparent;
+				color:$text-color-light;
+				font-family: $font-bold;
+				font-size:$text-medium-size;
+				margin-right:0px;
+				padding: 0 9px;
+			}
+			
+			.jplist-current{
+				font-weight: normal !important;
+				border:2px solid white ;
+				color:$text-color-light !important;
+			    border-radius: 15px;
+		        margin-top: 8px;
+
+			}
+
+		}//.jplist-pagination
+	}//.panel-bottom
+
+	.btnVoltar{
+		float: left;
+	    margin-top: 8px;
+
+	    i{
+	    	font-size: $text-main-size;
+    		padding-right: 5px;
+	    }
+
+		a{
+			color:$text-color-light;
+			-webkit-transition: all 0.5s linear;
+			-moz-transition: all 0.5s linear;
+			-o-transition: all 0.5s linear;
+			transition: all 0.5s linear;
+			font-family: $font-bold;
+			font-size:$text-medium-size;
+
+
+
+			&:hover, &:focus {
+				text-decoration: none;
+				color:$bpop_cinza;
+		
+			}
+		}
+
+	}//.btnVoltar
+
+	.txtIntro{
+		clear:both;
+		display: inline-block;
+		margin-bottom: 45px;
+	   	font-size: $text-medium-size;
+		font-family: $font-light;
+		color:$text-color-light;
+	}
+
+	.videoRec{
+		background: $text-color-light;
+		border-radius: 6px;
+		box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+		margin-bottom:30px;
+
+		span { 
+			position: relative; 
+			display: block;
+			font-family: $font-awesome;
+			&:before{
+				content: "\f144";
+				color:rgba(255, 255, 255, 1);
+				position: absolute;
+				top: 50%;
+				left:50%; 
+				transition: opacity .3s ease-in-out;
+				opacity: 0.5;
+				font-size: 90px;
+				text-shadow: 0px 2px 4.75px rgba(0, 0, 0, 0.25);
+				margin-left: -38.5px;
+   				margin-top: -55px;
+			}
+			&:hover{
+				&:before{
+					opacity: 0.8;
+				}
+			}
+		}
+		
+		img{
+		    display: block;
+		    width: 90%;
+		    margin: 0 auto;
+		    padding-top: 18px;
+		}
+
+		.vidTitle, .vidData {
+			font-family: $font-regular;
+			font-size: $text-medium-size;
+			margin:0;
+			padding:0;
+    		padding-left: 5%;
+		}
+
+		.vidTitle{
+			margin-top: 18px;
+			height: 45px;
+			overflow: hidden;
+		}
+
+		.vidData{
+			margin-top: 12px;
+			padding-bottom: 12px;
+			font-size: $text-small-size;
+
+		}
+
+	}//videoRec
+
+
+
+}//.jplist
+
+
+#cboxContent #cboxClose {
+    background-position: -50px 0px;
+    background: transparent;
+    color: white;
+    font-size: 30px;
+	top: -42px;
+    right: -13px;
+}
+    
+
+//MEDIA QUERIES
+@media (max-width:767px) {
+	.homeContent{
+		div{
+			height: 250px!important;
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.jplist-panel {
+	    display: block !important;
+	}
+}
+
+@media (max-width:550px) {
+	body {
+		background: url("../images/mobile.jpg") no-repeat top center ,url("../images/bg_pattern.jpg") repeat-y top center  ;
+	}
+	.homeContent{
+		div{
+			height: 200px!important;
+			margin-bottom: 40px;
+		}
+	}
+	.header{
+		text-align: center;
+		img{
+			width: 100%;
+		}
+	}
+	.container .row .homeContent .btnSobre{
+		width: 100%;
+	}
+}
+
+@media (max-width:400px) {
+	.homeContent{
+		div{
+			height: 150px!important;
+			margin-bottom: 40px;
+		}
+	}
+	.header{
+		text-align: center;
+		img{
+			width: 100%;
+		}
+	}
+
+	.jplist .btnVoltar {
+    	width: 100%;
+    	text-align: center;
+	}
+
+	.jplist .panel-top .jplist-drop-down{
+		    width: 100%;
+    		margin-top: 25px;
+	}
+}
+
+
+ 
